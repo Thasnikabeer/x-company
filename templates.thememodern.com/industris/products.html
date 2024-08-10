@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Mirrored from templates.thememodern.com/industris/cart.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 08 Aug 2024 18:59:31 GMT -->
+<!-- Mirrored from templates.thememodern.com/industris/services-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 08 Aug 2024 18:59:47 GMT -->
 <head>
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-	<title>Industris – Shop Cart Page</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap" rel="stylesheet">
+	<title>Industris – Services Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap" rel="stylesheet">
 	<link rel="stylesheet" id="bootstrap-css" href="css/bootstrap.css" type="text/css" media="all">
 	<link rel="stylesheet" id="awesome-font-css" href="css/font-awesome.css" type="text/css" media="all">
 	<link rel="stylesheet" id="ionicon-font-css" href="css/ionicon.css" type="text/css" media="all">
@@ -18,6 +17,64 @@
 	<link rel="stylesheet" id="industris-style-css" href="style.css" type="text/css" media="all">
 
 	<link rel="shortcut icon" href="favicon.png">
+	<style>
+		.services-box {
+    position: relative;
+    overflow: hidden;
+}
+
+.services-box img {
+    width: 100%;
+    height: 200px; /* Adjust as needed */
+    object-fit: cover; /* Ensures the image covers the container without distortion */
+}
+
+.services-box .services-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Optional: overlay effect */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.services-box:hover .services-overlay {
+    opacity: 1;
+}
+
+.services-box .services-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    color: #fff; /* Optional: text color */
+    background: rgba(0, 0, 0, 0.5); /* Optional: background color */
+    transition: background 0.3s;
+}
+
+.services-box:hover .services-content {
+    background: rgba(0, 0, 0, 0.7);
+}
+.services-box-img img {
+    width: 100%; /* Make the image fill the container */
+    height: 400px; /* Increase height to make the image larger */
+    object-fit: cover; /* Ensure the image covers the box without distortion */
+}
+
+.services-box {
+    margin-bottom: 30px; /* Add spacing between boxes if needed */
+}
+
+.services-box-img {
+    height: 400px; /* Ensure the box has the same height as the image */
+    overflow: hidden; /* Hide any overflow content to maintain the box's size */
+}
+
+
+	</style>
 </head>
 
 <body>
@@ -47,16 +104,15 @@
 	                    <div class="col-md-8">
 	                        <!-- Info on Topbar -->
 	                        <ul class="topbar-left">
-	                            <li><i class="icon ion-md-pin"></i>Forusbeen 50, 4035 Stavanger, Norway</li>
-	                            <li><i class="icon ion-md-call"></i>+84 0378 260 852</li>
-	                            <li><i class="icon ion-md-mail"></i>info.industris@gmail.com</li>
+	                            <li><i class="icon ion-md-pin"></i>RAK UAE</li>
+	                            <li><i class="icon ion-md-call"></i>00971 522 156 234</li>
+	                            <li><i class="icon ion-md-mail"></i>info@eagleeyevfd.com</li>
 	                        </ul>
 	                    </div>
                         <!-- Info on topbar close -->
 	                    <div class="col-md-4">
 	                    	<ul class="topbar-right pull-right">
 		                        <li class="toggle_search topbar-search"><a href="#"><i class="icon ion-md-search"></i></a></li>
-		                        <li class="topbar-login"><a href="#"> Login </a></li>
 		                        <li class="topbar-languages"><a href="#"> English <i class="icon ion-ios-arrow-down"></i></a></li>
 	                        </ul>
 	                    </div>
@@ -69,74 +125,53 @@
 	        		<div class="row">
 	        			<div class="col-md-3">
 			        		<div class="logo-brand">
-			        			<a href="index.html"><img src="images/logo.png" alt="industris"></a>
+			        			<a href="index.html"><img src="images/Eagle-Logo.jpg" alt="industris" style="width: 110px; margin-left: 50px;"></a>
 			        		</div>
 			        	</div>
 			        	<div class="col-md-9">
 			        		<div class="main-navigation">
 			        			<ul id="primary-menu" class="menu">
-			        				<li class="menu-item menu-item-has-children"><a href="index.html">Home</a>
-			        					<ul class="sub-menu">
-			        						<li class="menu-item"><a href="index.html">Home 1</a></li>
-			        						<li class="menu-item"><a href="index-2.html">Home 2</a></li>
-			        						<li class="menu-item"><a href="index-3.html">Home 3</a></li>
-			        						<li class="menu-item"><a href="index-4.html">Home 4</a></li>
-			        					</ul>
+			        				<li class="menu-item menu-item-has-children current-menu-ancestor current-menu-parent"><a href="index-4.html">Home</a>
 			        				</li>
-			        				<li class="menu-item menu-item-has-children current-menu-ancestor current-menu-parent"><a href="about-us.html">About Us</a>
+			        				<li class="menu-item menu-item-has-children"><a href="about-us.html">About Us</a>
 			        					<ul class="sub-menu">
 			        						<li class="menu-item"><a href="about-us.html">About Us</a></li>
-			        						<li class="menu-item menu-item-has-children"><a href="events.html">Events</a>
+			        						<!-- <li class="menu-item menu-item-has-children"><a href="events.html">Events</a>
 				        						<ul class="">
 				        							<li class="menu-item"><a href="events.html">Event</a></li>
 				        							<li class="menu-item"><a href="events-detail.html">Event Detail</a></li>
 				        						</ul>
 				        					</li>
-					        				<li class="menu-item menu-item-has-children current-menu-ancestor current-menu-parent"><a href="shop.html">Shop</a>
+					        				<li class="menu-item menu-item-has-children"><a href="shop.html">Shop</a>
 					        					<ul class="sub-menu">
 					        						<li class="menu-item"><a href="shop.html">Shop</a></li>
 					        						<li class="menu-item"><a href="shop-detail.html">Shop Detail</a></li>
-					        						<li class="menu-item current-menu-item page_item current_page_item"><a href="cart.html">Cart</a></li>
+					        						<li class="menu-item"><a href="cart.html">Cart</a></li>
 					        						<li class="menu-item"><a href="checkout.html">Checkout</a></li>
 					        					</ul>
-					        				</li>
-			        						<li class="menu-item"><a href="faq.html">FAQ's</a></li>
-			        						<li class="menu-item"><a href="gallery.html">Gallery</a></li>
-			        						<li class="menu-item"><a href="404-page.html">404 Pages</a></li>
-			        						<li class="menu-item"><a href="comming-soon.html">Comming Soon</a></li>
-			        						<li class="menu-item"><a href="login.html">Login</a></li>
-			        						<li class="menu-item"><a href="typography.html">Typography</a></li>
-			        						<li class="menu-item"><a href="career.html">Career Page</a></li>
-			        						<li class="menu-item"><a href="corporate-governance.html">Corporate Governance</a></li>
-			        						<li class="menu-item"><a href="history.html">History</a></li>
-			        						<li class="menu-item"><a href="our-team.html">Our Team</a></li>
-			        						<li class="menu-item"><a href="partner-clients.html">Partner Clients</a></li>
-			        						<li class="menu-item"><a href="contact-us.html">Contact Us</a></li>
+					        				</li> -->
+			        						
 			        					</ul>
 			        				</li>
+									<li class="menu-item menu-item-has-children current-menu-ancestor current-menu-parent"><a href="products.html">Products</a>
+			        				</li>
 			        				<li class="menu-item menu-item-has-children"><a href="services.html">Services</a>
-			        					<ul class="sub-menu">
+			        					<!-- <ul class="sub-menu">
 			        						<li class="menu-item"><a href="services.html">Services</a></li>
 			        						<li class="menu-item"><a href="services-2.html">Services 2</a></li>
 			        						<li class="menu-item"><a href="services-detail.html">Services Detail</a></li>
-			        					</ul>
+			        					</ul> -->
 			        				</li>
-			        				<li class="menu-item menu-item-has-children"><a href="project.html">Projects</a>
-			        					<ul class="sub-menu">
+			        				<li class="menu-item menu-item-has-children"><a href="contact-us.html">contact-us</a>
+			        					<!-- <ul class="sub-menu">
 			        						<li class="menu-item"><a href="project.html">Project 1</a></li>
 			        						<li class="menu-item"><a href="project-2.html">Project 2</a></li>
 			        						<li class="menu-item"><a href="project-detail.html">Project Detail</a></li>
-			        					</ul>
+			        					</ul> -->
 			        				</li>
-			        				<li class="menu-item menu-item-has-children"><a href="news.html">News</a>
-			        					<ul class="sub-menu">
-			        						<li class="menu-item"><a href="news.html">News 1</a></li>
-			        						<li class="menu-item"><a href="news-2.html">News 2</a></li>
-			        						<li class="menu-item"><a href="post.html">News Detail</a></li>
-			        					</ul>
-			        				</li>
+			        				
 			        			</ul>
-		        				<a href="#" class="btn btn-primary">Get a quote<i class="icon ion-md-paper-plane"></i></a>
+		        				<!-- <a href="#" class="btn btn-primary">Get a quote<i class="icon ion-md-paper-plane"></i></a> -->
 			        		</div>
 			        	</div>
 		        	</div>
@@ -150,7 +185,7 @@
 	        		<div class="row">
 	        			<div class="col-xs-6">
 			        		<div class="logo-brand-mobile">
-			        			<a href="index.html"><img src="images/logo.png" alt="industris"></a>
+			        			<a href="index.html"><img src="images/Eagle-Logo.jpg" alt="industris"></a>
 			        		</div>
 			        	</div>
 	        			<div class="col-xs-6">
@@ -169,7 +204,7 @@
 			        						<li class="menu-item"><a href="index-4.html">Home 4</a></li>
 			        					</ul>
 			        				</li>
-			        				<li class="menu-item menu-item-has-children current-menu-ancestor current-menu-parent"><a href="about-us.html">About Us</a>
+			        				<li class="menu-item menu-item-has-children"><a href="about-us.html">About Us</a>
 			        					<ul class="sub-menu">
 			        						<li class="menu-item"><a href="about-us.html">About Us</a></li>
 			        						<li class="menu-item menu-item-has-children"><a href="events.html">Events</a>
@@ -178,11 +213,11 @@
 				        							<li class="menu-item"><a href="events-detail.html">Event Detail</a></li>
 				        						</ul>
 				        					</li>
-					        				<li class="menu-item menu-item-has-children current-menu-ancestor current-menu-parent"><a href="shop.html">Shop</a>
+					        				<li class="menu-item menu-item-has-children"><a href="shop.html">Shop</a>
 					        					<ul class="sub-menu">
 					        						<li class="menu-item"><a href="shop.html">Shop</a></li>
 					        						<li class="menu-item"><a href="shop-detail.html">Shop Detail</a></li>
-					        						<li class="menu-item current-menu-item current_page_item"><a href="cart.html">Cart</a></li>
+					        						<li class="menu-item"><a href="cart.html">Cart</a></li>
 					        						<li class="menu-item"><a href="checkout.html">Checkout</a></li>
 					        					</ul>
 					        				</li>
@@ -200,10 +235,10 @@
 			        						<li class="menu-item"><a href="contact-us.html">Contact Us</a></li>
 			        					</ul>
 			        				</li>
-			        				<li class="menu-item menu-item-has-children"><a href="services.html">Services</a>
+			        				<li class="menu-item menu-item-has-children current-menu-ancestor current-menu-parent"><a href="services.html">Services</a>
 			        					<ul class="sub-menu">
 			        						<li class="menu-item"><a href="services.html">Services</a></li>
-			        						<li class="menu-item"><a href="services-2.html">Services 2</a></li>
+			        						<li class="menu-item current-menu-item current_page_item"><a href="services-2.html">Services 2</a></li>
 			        						<li class="menu-item"><a href="services-detail.html">Services Detail</a></li>
 			        					</ul>
 			        				</li>
@@ -232,139 +267,148 @@
         <!-- Mobile header start -->
 
 		<div id="content" class="site-content">
-			<div class="page-header" style="background: url('images/subheader-shop.jpg') no-repeat center center;">
+			<div class="page-header" style="background: url('images/subheader-services.jpg') no-repeat center center;">
 			    <div class="container">
 			        <div class="breadc-box no-line">
 			            <div class="row">
 			                <div class="col-md-12">
-			                    <h2 class="page-title">Cart </h2>
+			                    <h2 class="page-title">Our Products</h2>
 			                    <ul id="breadcrumbs" class="breadcrumbs none-style">
 			                        <li><a href="index.html">Home</a></li>
-			                        <li><a href="shop.html">Shop</a></li>
-			                        <li class="active">Cart </li>
+			                        <li class="active">Our Products</li>
 			                    </ul>
 			                </div>
 			            </div>
 			        </div>
 			    </div>
 			</div>
-
 			<section>
 				<div class="container">
 					<div class="row">
-						<div class="col-md-12">
-							<div class="shopping-cart-warp">
-	                            <div class="table-responsive">
-	                              <table class="shop_table shop_table_responsive cart table">
-	                                <thead>
-	                                    <tr>
-	                                        <th class="product-name">Product</th>
-	                                        <th class="product-price">Price</th>
-	                                        <th class="product-quantity">Quantity</th>
-	                                        <th class="product-subtotal">Total</th>
-	                                        <th class="product-remove">&nbsp;</th>
-	                                    </tr>
-	                                </thead>
-	                                <tbody>
-	                                    <tr class="cart_item">
-	                                        <td data-title="Product" class="product-name">
-	                                        	<img src="images/product-cart-1.jpg" alt="">
-	                                            <a href="#">Earmuff Brim Hard Hat </a>
-	                                        </td>
-	                                        <td data-title="Price" class="product-price">
-	                                            <span class="amount">$2,112.00</span>
-	                                        </td>
-	                                        <td data-title="Quantity" class="product-quantity">
-	                                            <div class="quantity">
-	                                                <input type="number" size="4" class="input-text qty text" title="Qty" value="1" step="1">
-	                                            </div>
-	                                        </td>
-	                                        <td data-title="Total" class="product-subtotal">
-	                                            <span class="amount">$2,112.00</span>
-	                                        </td>
-	                                        <td class="product-remove">
-	                                            <a class="remove" href="#">+</a>                   
-	                                        </td>
-	                                    </tr>
-	                                    <tr class="cart_item">
-	                                        <td data-title="Product" class="product-name">
-	                                        	<img src="images/product-cart-2.jpg" alt="">
-	                                            <a href="#">Fish 400</a>
-	                                        </td>
-	                                        <td data-title="Price" class="product-price">
-	                                            <span class="amount">$122.00</span>
-	                                        </td>
-	                                        <td data-title="Quantity" class="product-quantity">
-	                                            <div class="quantity">
-	                                                <input type="number" size="4" class="input-text qty text" title="Qty" value="1" step="1">
-	                                            </div>
-	                                        </td>
-	                                        <td data-title="Total" class="product-subtotal">
-	                                            <span class="amount">$122.00</span>
-	                                        </td>
-	                                        <td class="product-remove">
-	                                            <a class="remove" href="#">+</a>                   
-	                                        </td>
-	                                    </tr>
-	                                    <tr class="cart_item">
-	                                    	<td colspan="5">
-					                            <div class="cart-form">
-					                                <div class="coupon"> 
-					                                    <input type="text" placeholder="Coupon code" value="" id="coupon_code" class="form-control default" name="coupon_code"> 
-					                                    <input type="submit" value="Apply" name="apply_coupon" class="btn btn-primary btn-coupon text-cap">
-					                                </div>                                        
-					                                <input type="submit" value="Update cart" name="update_cart" class="btn btn-default btn-update text-cap">                                                            
-					                                <input type="hidden" value="" name="_wpnonce" id="_wpnonce">
-					                                <input type="hidden" value="/woocommerce-test/cart/" name="_wp_http_referer">         
-					                            </div>
-					                        </td>
-				                        </tr>
-	                                </tbody>
-	                              </table>
-	                            </div>
-	                        </div>
-	                    </div>
-                        <div class="industris-space"></div>
-                        <div class="col-md-offset-6 col-md-6">
-                        	<h3>Cart totals</h3>
-                        	<div class="table-responsive">
-                        		<table class="cart-total">
-                        			<tbody>
-                        				<tr class="cart-subtotal">
-											<th>Subtotal</th>
-											<td class="text-right" data-title="Subtotal"><span class="text-primary woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>92.00</span></td>
-										</tr>
-										<tr class="order-total">
-											<th>Total</th>
-											<td class="text-right" data-title="Total"><span class="text-primary woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>92.00</span> </td>
-										</tr>
-									</tbody>
-                        		</table>
-                        	</div>
-                        	<div class="wc-proceed-to-checkout text-right">
-                        		<a href="#" class="btn btn-primary">Proceed to checkout</a>
-                        	</div>
-                        </div>
+						<div class="col-md-7 col-sm-12">
+							<h2>OVERVIEW</h2>
+							<p>At EAGLE Vehicles Fuel Distribution LLC OPC, we provide top-notch diesel supply, bunker services, and advanced lubricants tailored to your needs. Our diesel fuel ensures optimal performance for machinery and transportation, while our marine bunker supplies meet the highest industry standards. We offer high-performance lubricants to extend the life of engines and equipment. Additionally, our professional tank cleaning and emergency fuel delivery services guarantee operational reliability. With a commitment to environmental solutions and expert consultation, we are dedicated to supporting your business with quality products and exceptional service. Trust us for all your fuel and lubrication needs.
+							<br>
+							<h3>Our featured</h3>
+							<div class="row">
+								<div class="col-md-3 col-sm-4">
+									<div class="feature-box">
+										<div class="feature-icon">
+											<i class="icon ion-ios-help-buoy"></i>
+										</div>
+										<h4>Support 24/7</h4>
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-4">
+									<div class="feature-box">
+										<div class="feature-icon">
+											<i class="icon ion-ios-hammer"></i>
+										</div>
+										<h4>Maintenance support</h4>
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-4">
+									<div class="feature-box">
+										<div class="feature-icon">
+											<i class="icon ion-ios-briefcase"></i>
+										</div>
+										<h4>Customer-Centric</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-5 col-sm-12 sm-center">
+							<div class="industris-space-sm"></div>
+							<img src=https://etimg.etb2bimg.com/photo/106180634.cms 
+     						alt="Description of Image" 
+     						style="width: 300%; height: auto;">
+
+
+						</div>
+					</div>
+			    </div>
+			</section>
+			<section class="bg-light">
+				<div class="container">
+					<h2>OUR PRODUCTS</h2>
+					<div class="space-30" style="height: 30px"></div>
+					<div class="row">
+						<div class="col-md-4 col-sm-6">
+							<div class="services-box services-box-img">
+								<div class="services-overlay"></div>
+								<div class="services-content">
+									<h3><a href="services-detail.html">NORMAL MGO/DMO</a></h3>
+								</div>
+								<img src="https://i0.wp.com/inaparts.com/wp-content/uploads/2020/04/Marine-Gas-Oil.jpg?fit=290%2C220&ssl=1" alt="Marine Gas Oil">
+							</div>
+						</div>
+						
+						<div class="col-md-4 col-sm-6">
+							<div class="services-box services-box-img">
+								<div class="services-overlay"></div>
+								<div class="services-content">
+									<h3><a href="services-detail.html">ADNOC SEALED 10 PPM</a></h3>
+								</div>
+								<img src="https://image.ec21.com/image/sarboz/bimg_GC11766510_CA11766511/Diesel-EN590-10ppm-50ppm-500ppm.jpg" alt="ADNOC SEALED 10 PPM">
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="services-box services-box-img">
+								<div class="services-overlay"></div>
+								<div class="services-content">
+									<h3><a href="services-detail.html">10 PPM ADNOC QUALITY</a></h3>
+								</div>
+								<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnaC2-HN1tvIemRmzi1Qj52qRgvH7X5q1_10fWv-eCxRQj_YRL4eAi9pfPF6i5LjMnRwk&usqp" alt="10 PPM ADNOC QUALITY">
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="services-box services-box-img">
+								<div class="services-overlay"></div>
+								<div class="services-content">
+									<h3><a href="services-detail.html">IFO 380 CST</a></h3>
+								</div>
+								<img src="https://image.exportimes.com/UploadFile/Ckeditor/2014/11/13/201411131033551169.png" alt="IFO 380 CST">
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="services-box services-box-img">
+								<div class="services-overlay"></div>
+								<div class="services-content">
+									<h3><a href="services-detail.html">IFO 180 CST</a></h3>
+								</div>
+								<img src="https://royalglobalenergy.com/wp-content/uploads/2019/05/Proteux-CST-Fuel-Oil-180-%E2%80%93-280-380-1.jpg" alt="IFO 180 CST">
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="services-box services-box-img">
+								<div class="services-overlay"></div>
+								<div class="services-content">
+									<h3><a href="services-detail.html">OTHER OIL PRODUCTS</a></h3>
+								</div>
+								<img src="https://petroleumbazaar.com/wp-content/uploads/2020/02/images.jpg" alt="OTHER OIL PRODUCTS">
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
+			
 
 		</div>
 	    
 
-	    <footer id="site-footer" class="site-footer bg-footer">
-	        <div class="main-footer">
+		<footer id="site-footer-2" class="site-footer-2">
+	        <div class="main-footer-2">
 	            <div class="container-custom">
 	                <div class="row">
 
 	                    <div class="col-md-3 col-sm-6">
 	                    	<div class="widget-footer">
 		                        <div id="media_image-1" class="widget widget_media_image">
-		                            <a href="index.html"><img src="images/logo-footer.png" alt=""></a>
+		                            <a href="index.html"><img src="images/Eagle-Logo.jpg" alt="industris" style="width: 130px; margin-left: 100px;"></a>
 		                        </div>
 		                        <div id="custom_html-1" class="widget_text widget widget_custom_html">
 		                            <div class="textwidget custom-html-widget">
-		                                <p>Privacy | Integrity ©2019 Industris Company. <br>All Rights Res</p>
+		                                <p>All Rights Reserved. EAGLE Vehicles Fuel Distribution LLC OPC</p>
 		                            </div>
 		                        </div>
 		                    </div>
@@ -375,13 +419,11 @@
 	                    	<div class="widget-footer">
 		                        <div id="custom_html-2" class="widget_text widget widget_custom_html padding-left">
 		                            <div class="textwidget custom-html-widget">
+										<h3>Products</h3>
 		                                <ul>
-		                                    <li><a href="service-detail.html">Oil & Gas exploited</a></li>
-		                                    <li><a href="service-detail.html">Automotive Manufacturing</a></li>
-		                                    <li><a href="service-detail.html">Transportation & Distribution</a></li>
-		                                    <li><a href="service-detail.html">Manufacture</a></li>
-		                                    <li><a href="service-detail.html">Industrial Construction</a></li>
-		                                    <li><a href="service-detail.html">Green Energy</a></li>
+		                                    <li><a href="service-detail.html">Diesel Gas Oil</a></li>
+		                                    <li><a href="service-detail.html">Bunker Supplies</a></li>
+		                                    <li><a href="service-detail.html">10 ppm</a></li>
 		                                </ul>
 		                            </div>
 		                        </div>
@@ -395,10 +437,8 @@
 		                            <div class="textwidget custom-html-widget">
 		                                <ul>
 		                                    <li><a href="index.html">About us</a></li>
-		                                    <li><a href="about.html">Contact us</a></li>
-		                                    <li><a href="services.html">The news</a></li>
+		                                    <li><a href="contact-us.html">Contact us</a></li>
 		                                    <li><a href="services.html">Terms & conditions</a></li>
-		                                    <li><a href="blog.html">Case Studies</a></li>
 		                                </ul>
 		                            </div>
 		                        </div>
@@ -429,9 +469,8 @@
 	                            	follow us:
 	                                <a target="_blank" href="#" rel="noopener noreferrer"><i class="icon ion-logo-facebook"></i></a>
 	                                <a target="_blank" href="#" rel="noopener noreferrer"><i class="icon ion-logo-instagram"></i></a>
-	                                <a target="_blank" href="#" rel="noopener noreferrer"><i class="icon ion-logo-skype"></i></a>
-	                                <a target="_blank" href="#" rel="noopener noreferrer"><i class="icon ion-logo-twitter"></i></a>
-	                                <a target="_blank" href="#" rel="noopener noreferrer"><i class="icon ion-logo-youtube"></i></a>
+	                                <!-- <a target="_blank" href="#" rel="noopener noreferrer"><i class="icon ion-logo-skype"></i></a> -->
+	                                <!-- <a target="_blank" href="#" rel="noopener noreferrer"><i class="icon ion-logo-twitter"></i></a> -->
 	                            </div>
 	                        </div>
 	                    </div>
@@ -446,9 +485,9 @@
 	            	<div class="row">
 	            		<div class="col-md-12">
 		                    <ul class="topbar-left">
-		                        <li><i class="icon ion-md-pin"></i>Forusbeen 50, 4035 Stavanger, Norway</li>
-		                        <li><i class="icon ion-md-call"></i>+84 0378 260 852</li>
-		                        <li><i class="icon ion-md-mail"></i>info.industris@gmail.com</li>
+		                        <li><i class="icon ion-md-pin"></i>RAK UAE</li>
+		                        <li><i class="icon ion-md-call"></i>00971 522 156 234</li>
+		                        <li><i class="icon ion-md-mail"></i>info@eagleeyevfd.com</li>
 		                    </ul>
 			        		<a id="back-to-top" href="#" class="btn btn-back-to-top show pull-right">Back to top<i class="icon ion-ios-arrow-dropup-circle"></i></a>
 			        	</div>
@@ -468,5 +507,5 @@
 	<script src='js/scripts.js'></script>
 </body>
 
-<!-- Mirrored from templates.thememodern.com/industris/cart.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 08 Aug 2024 18:59:31 GMT -->
+<!-- Mirrored from templates.thememodern.com/industris/services-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 08 Aug 2024 18:59:49 GMT -->
 </html>
